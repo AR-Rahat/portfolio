@@ -14,7 +14,7 @@ export async function fetchDataFromGitHub(config: GitHubConfig): Promise<Portfol
     const { data } = await octokit.repos.getContent({
       owner: config.owner,
       repo: config.repo,
-      path: 'data.json',
+      path: 'public/data.json',
     });
 
     if ('content' in data) {
@@ -42,7 +42,7 @@ export async function pushDataToGitHub(
       const { data: fileData } = await octokit.repos.getContent({
         owner: config.owner,
         repo: config.repo,
-        path: 'data.json',
+        path: 'public/data.json',
       });
       if ('sha' in fileData) {
         sha = fileData.sha;
@@ -56,7 +56,7 @@ export async function pushDataToGitHub(
     await octokit.repos.createOrUpdateFileContents({
       owner: config.owner,
       repo: config.repo,
-      path: 'data.json',
+      path: 'public/data.json',
       message,
       content,
       sha,

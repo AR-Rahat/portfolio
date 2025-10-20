@@ -1,4 +1,369 @@
 {
-  "info": "This is an example data file for GitHub sync. Your actual portfolio data will be synced here when you use the Push to GitHub feature."
+  "theme": {
+    "primaryColor": "#2563eb",
+    "secondaryColor": "#1e40af",
+    "accentColor": "#60a5fa",
+    "backgroundColor": "#ffffff",
+    "textColor": "#1f2937",
+    "fontFamily": "Inter, system-ui, sans-serif"
+  },
+  "hero": {
+    "name": "Md Asfakur Rahat",
+    "title": "Software Engineer II",
+    "subtitle": "Crafting exceptional mobile applications with Flutter & Android",
+    "ctaText": "View My Work",
+    "ctaLink": "#projects"
+  },
+  "about": {
+    "title": "About Me",
+    "bio": "I am a Software Engineer II with 1.5 years of dedicated experience in mobile application development, specializing in Flutter and Android. I excel in building scalable, high-performance applications with clean architecture and intuitive UI/UX. Committed to continuous learning and emerging technologies, I consistently deliver impactful and innovative solutions.",
+    "highlights": [
+      "1.5+ years of mobile development experience",
+      "Specialized in Flutter & Android development",
+      "Clean Architecture & MVVM expertise",
+      "Agile development methodology"
+    ]
+  },
+  "experience": [
+    {
+      "id": "1",
+      "company": "Brain Station 23 PLC",
+      "position": "Software Engineer II",
+      "location": "Dhaka, Bangladesh",
+      "startDate": "2025-06",
+      "endDate": "Present",
+      "description": "Leading development of mobile applications using Flutter and Android technologies",
+      "achievements": [
+        "Actively contributed to agile sprint ceremonies and delivered high-quality sprint goals",
+        "Designed and developed multiple new features enhancing system functionality",
+        "Maintained clean, scalable, and maintainable software architecture",
+        "Expertly managed Git branches and version control for seamless collaboration"
+      ]
+    },
+    {
+      "id": "2",
+      "company": "Brain Station 23 PLC",
+      "position": "Software Engineer I",
+      "location": "Dhaka, Bangladesh",
+      "startDate": "2025-01",
+      "endDate": "2025-06",
+      "description": "Developed cross-platform mobile applications and managed app store releases",
+      "achievements": [
+        "Engineered critical new features for cross-platform mobile applications",
+        "Managed end-to-end release process for Google Play Store and Apple App Store",
+        "Contributed to sprint planning sessions and collaborated with product owners",
+        "Provided technical insights and resolved blockers in team meetings"
+      ]
+    },
+    {
+      "id": "3",
+      "company": "Brain Station 23 PLC",
+      "position": "Associate Software Engineer",
+      "location": "Dhaka, Bangladesh",
+      "startDate": "2024-08",
+      "endDate": "2024-12",
+      "description": "Developed Android applications using Jetpack Compose and Kotlin",
+      "achievements": [
+        "Led development of dynamic, responsive user interfaces using Jetpack Compose",
+        "Designed and deployed serverless Supabase Edge Functions",
+        "Enhanced data processing efficiency and application performance",
+        "Implemented intuitive navigation flows with Compose Navigation"
+      ]
+    },
+    {
+      "id": "4",
+      "company": "Brain Station 23 PLC",
+      "position": "Trainee",
+      "location": "Dhaka, Bangladesh",
+      "startDate": "2024-04",
+      "endDate": "2024-08",
+      "description": "Learned mobile development fundamentals and contributed to projects",
+      "achievements": [
+        "Completed training in Flutter and Android development",
+        "Contributed to proof-of-concept projects",
+        "Learned clean architecture principles",
+        "Gained experience in Git version control"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "1",
+      "title": "My Race Super App",
+      "description": "A comprehensive superapp that revolutionizes the digital experience for ISP subscribers. Empowers users to manage subscription plans, resolve service issues, access exclusive benefits, and simplify payment processing.",
+      "tags": [
+        "Flutter",
+        "Firebase",
+        "Cubit",
+        "Dio",
+        "Clean Architecture",
+        "Payment Gateway"
+      ],
+      "featured": true,
+      "demoLink": "https://play.google.com/store/apps/details?id=com.myrace.app"
+    },
+    {
+      "id": "2",
+      "title": "Guardian Life",
+      "description": "A comprehensive digital platform that consolidates all life insurance solutions. Manages policies, tracks claims, calculates premiums, processes payments, and provides access to healthcare benefits.",
+      "tags": [
+        "Flutter",
+        "Firebase",
+        "Dio",
+        "Bloc",
+        "Clean Architecture"
+      ],
+      "featured": true,
+      "githubLink": "https://github.com/BrainStation-23/GLI_mobile_app"
+    },
+    {
+      "id": "3",
+      "title": "RealEstateX",
+      "description": "A high-performance Android application for comprehensive, real-time investment portfolio tracking and advanced analytics. Integrates with multiple financial APIs for unified asset management.",
+      "tags": [
+        "Jetpack Compose",
+        "Kotlin",
+        "Supabase",
+        "Ktor",
+        "Dagger Hilt",
+        "MVVM"
+      ],
+      "featured": true,
+      "demoLink": "http://172.16.231.10:3000/BS23/real-estate-x-android"
+    },
+    {
+      "id": "4",
+      "title": "NopStation Cart",
+      "description": "An Android e-commerce application with modern responsive components. Features include image carousel, category management, shopping cart, checkout, and user authentication.",
+      "tags": [
+        "Kotlin",
+        "XML",
+        "Jetpack Compose",
+        "Retrofit",
+        "Room Database",
+        "Dagger Hilt"
+      ],
+      "featured": false,
+      "githubLink": "https://github.com/asfakur-rahat/NopStation-Cart"
+    },
+    {
+      "id": "5",
+      "title": "Task Tracker",
+      "description": "An Android application for task management following clean architecture and material design principles. Features include CRUD operations, search functionality, and camera integration.",
+      "tags": [
+        "XML",
+        "Kotlin",
+        "Room",
+        "Dagger Hilt",
+        "Retrofit",
+        "MVVM"
+      ],
+      "featured": false,
+      "githubLink": "https://github.com/asfakur-rahat/Task-Tracker"
+    },
+    {
+      "id": "6",
+      "title": "ABG Pocket POC",
+      "description": "A proof-of-concept Android project featuring permissions handling, device contacts access, nested recycler views, bottom sheet dialogs, and custom UI components.",
+      "tags": [
+        "Kotlin",
+        "XML",
+        "MVVM",
+        "Clean Architecture"
+      ],
+      "featured": false,
+      "githubLink": "https://github.com/asfakur-rahat/UI-Practice"
+    }
+  ],
+  "skills": [
+    {
+      "id": "1",
+      "category": "Mobile Development",
+      "skills": [
+        {
+          "name": "Flutter Development",
+          "level": 80
+        },
+        {
+          "name": "Dart",
+          "level": 80
+        },
+        {
+          "name": "Android Development",
+          "level": 80
+        },
+        {
+          "name": "Kotlin",
+          "level": 80
+        },
+        {
+          "name": "Jetpack Compose",
+          "level": 80
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "category": "Backend & Database",
+      "skills": [
+        {
+          "name": "Firebase",
+          "level": 80
+        },
+        {
+          "name": "Supabase",
+          "level": 70
+        },
+        {
+          "name": "Room Database",
+          "level": 75
+        },
+        {
+          "name": "RESTful APIs",
+          "level": 85
+        },
+        {
+          "name": "Retrofit",
+          "level": 80
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "category": "Architecture & Tools",
+      "skills": [
+        {
+          "name": "Clean Architecture",
+          "level": 85
+        },
+        {
+          "name": "MVVM",
+          "level": 85
+        },
+        {
+          "name": "Git/GitHub",
+          "level": 80
+        },
+        {
+          "name": "Dagger Hilt",
+          "level": 75
+        },
+        {
+          "name": "Bloc/Cubit",
+          "level": 80
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "category": "Professional Skills",
+      "skills": [
+        {
+          "name": "Attention to Quality & Best Practices",
+          "level": 70
+        },
+        {
+          "name": "Problem-Solving & Analytical Thinking",
+          "level": 80
+        },
+        {
+          "name": "Time Management & Organization",
+          "level": 90
+        },
+        {
+          "name": "Agile Development",
+          "level": 85
+        },
+        {
+          "name": "Team Collaboration",
+          "level": 85
+        }
+      ]
+    }
+  ],
+  "blog": [
+    {
+      "id": "1",
+      "title": "Building Scalable Mobile Applications with Flutter",
+      "excerpt": "Best practices for creating mobile applications that scale with your business using Flutter and clean architecture",
+      "content": "Full article content here...",
+      "date": "2024-12-15",
+      "tags": [
+        "Flutter",
+        "Mobile Development",
+        "Clean Architecture"
+      ],
+      "readTime": "5 min read"
+    },
+    {
+      "id": "2",
+      "title": "Modern Android Development with Jetpack Compose",
+      "excerpt": "Exploring the latest patterns in Android development using Jetpack Compose and modern architecture",
+      "content": "Full article content here...",
+      "date": "2024-11-20",
+      "tags": [
+        "Android",
+        "Jetpack Compose",
+        "Kotlin"
+      ],
+      "readTime": "7 min read"
+    }
+  ],
+  "testimonials": [
+    {
+      "id": "1",
+      "name": "Team Lead",
+      "position": "Senior Software Engineer",
+      "company": "Brain Station 23",
+      "content": "Asfakur consistently delivers high-quality code and shows excellent problem-solving skills. His dedication to clean architecture and best practices is commendable.",
+      "rating": 5
+    },
+    {
+      "id": "2",
+      "name": "Product Manager",
+      "position": "Product Manager",
+      "company": "Brain Station 23",
+      "content": "Outstanding work on mobile applications! Asfakur's attention to detail and technical expertise significantly enhanced our project outcomes.",
+      "rating": 5
+    }
+  ],
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "Let's work together on your next mobile project",
+    "email": "asfakurrahat7@gmail.com",
+    "phone": "+880 1707 815939",
+    "social": [
+      {
+        "platform": "GitHub Personal",
+        "url": "https://github.com/AR-Rahat",
+        "icon": "FaGithub"
+      },
+      {
+        "platform": "GitHub Organization",
+        "url": "https://github.com/asfakur-rahat",
+        "icon": "FaGithub"
+      },
+      {
+        "platform": "LinkedIn",
+        "url": "https://linkedin.com/in/arrahat777",
+        "icon": "FaLinkedin"
+      },
+      {
+        "platform": "Twitter",
+        "url": "https://twitter.com/arrahat777",
+        "icon": "FaTwitter"
+      }
+    ],
+    "formEnabled": true
+  },
+  "sectionVisibility": {
+    "hero": true,
+    "about": true,
+    "experience": true,
+    "projects": true,
+    "skills": true,
+    "blog": true,
+    "testimonials": true,
+    "contact": true
+  }
 }
-

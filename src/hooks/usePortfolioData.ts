@@ -1,4 +1,4 @@
-import { useCallback } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { PortfolioData } from '../types/portfolio';
 import { defaultPortfolioData } from '../data/defaultData';
 import { useLocalStorage } from './useLocalStorage';
@@ -8,6 +8,38 @@ export function usePortfolioData() {
     'portfolioData',
     defaultPortfolioData
   );
+  const [isLoading, setIsLoading] = useState(true);
+
+  // Fetch data from public/data.json if localStorage is empty
+  useEffect(() => {
+    const loadInitialData = async () => {
+      try {
+        // Check if localStorage has custom data (not just defaults)
+        const stored = window.localStorage.getItem('portfolioData');
+        
+        if (!stored) {
+          // Try to fetch from public data.json
+          const response = await fetch('/data.json');
+          if (response.ok) {
+            const publicData = await response.json();
+            // Only use public data if it's not the placeholder
+            if (publicData && !publicData.info) {
+              console.log('Loading data from public/data.json');
+              setData(publicData);
+            } else {
+              console.log('Using default data (public/data.json is placeholder)');
+            }
+          }
+        }
+      } catch (error) {
+        console.log('Could not fetch public data, using defaults:', error);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+
+    loadInitialData();
+  }, []); // Only run once on mount
 
   const updateData = useCallback((newData: Partial<PortfolioData>) => {
     setData((prev) => ({ ...prev, ...newData }));
@@ -50,6 +82,7 @@ export function usePortfolioData() {
 
   return {
     data,
+    isLoading,
     updateData,
     updateSection,
     resetToDefaults,

@@ -19,6 +19,7 @@ function App() {
   const [isAdminPanelOpen, setIsAdminPanelOpen] = useState(false);
   const {
     data,
+    isLoading,
     updateData,
     resetToDefaults,
     exportData,
@@ -58,6 +59,18 @@ function App() {
     { id: 'testimonials', label: 'Testimonials', visible: data.sectionVisibility.testimonials },
     { id: 'contact', label: 'Contact', visible: data.sectionVisibility.contact },
   ];
+
+  // Show loading state while fetching data
+  if (isLoading) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-white">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-16 w-16 border-b-2 border-primary-600 mx-auto mb-4"></div>
+          <p className="text-gray-600">Loading portfolio...</p>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <ThemeProvider theme={data.theme}>
