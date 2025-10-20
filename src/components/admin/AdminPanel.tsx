@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { FaTimes, FaSave, FaUndo, FaDownload, FaUpload, FaCog } from 'react-icons/fa';
+import { FaTimes, FaUndo, FaDownload, FaUpload, FaCog } from 'react-icons/fa';
 import { PortfolioData } from '../../types/portfolio';
 import { SectionEditor } from './SectionEditor';
 import { ThemeEditor } from './ThemeEditor';

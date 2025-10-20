@@ -1,4 +1,4 @@
-import { useState, useCallback } from 'react';
+import { useCallback } from 'react';
 import { PortfolioData } from '../types/portfolio';
 import { defaultPortfolioData } from '../data/defaultData';
 import { useLocalStorage } from './useLocalStorage';

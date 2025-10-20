@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { PortfolioData } from '../../types/portfolio';
-import { FaEye, FaEyeSlash, FaPlus, FaTrash } from 'react-icons/fa';
+import { FaEye, FaEyeSlash } from 'react-icons/fa';
 
 interface SectionEditorProps {
   data: PortfolioData;

@@ -20,7 +20,6 @@ function App() {
   const {
     data,
     updateData,
-    updateSection,
     resetToDefaults,
     exportData,
     importData,
